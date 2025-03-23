@@ -1,0 +1,65 @@
+main{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    
+}
+
+.tag{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    max-width: 250px;
+    height:auto;
+    background-color: rgb(218, 217, 217);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    
+
+   
+
+    
+}
+.tag img{
+    display: flex;
+    
+    border: solid 1px rgb(63, 62, 62);
+    width: 30%;
+    height: auto;
+    z-index: 2;
+    position: absolute;
+    border-radius: 10px;
+    top: 15%;
+    
+    
+}
+
+.tag .rotada{
+    border: solid 1px rgb(63, 62, 62);
+    border-radius: 10px;
+    width: 30%;
+    height: auto;    
+    position: absolute;
+    transform: rotate(10deg);
+    z-index: 1;
+    top: 10%;
+    right: 28%;
+}
+
+
+main p{
+    font-size: 1rem;
+    margin-top: 5rem;
+    text-align:justify;
+    
+
+}

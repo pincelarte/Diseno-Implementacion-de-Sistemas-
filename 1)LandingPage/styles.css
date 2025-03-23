@@ -1,0 +1,58 @@
+
+
+@import "./css/body.css";
+@import "./css/header.css";
+@import "./css/button.css";
+@import "./css/main.css";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (min-width: 830px) {
+    .container{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3rem;
+    }
+    
+    header {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    header .parrafo {
+        padding: 0;
+    }
+    .fotos-portada{
+            margin-right: 3rem;
+        }
+
+    .tag{
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+}
+
