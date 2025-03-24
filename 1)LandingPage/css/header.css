@@ -13,7 +13,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;  
-    font-size: 1rem;
     text-align: justify;      
     word-wrap: break-word;  
     box-sizing: border-box;  
@@ -24,18 +23,19 @@ span {
     font-size: 1.5rem;
 }
 header p{
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 5rem;
     text-align: justify;
+    color: rgb(102, 102, 102);
 }
 
 .fotos-portada {   
     display: flex;
-    margin-top: 20%;
+    margin-top: 8rem;
     justify-content: center;
     min-width: 400px;
     align-items: center;
-    width: 80%;
+    width: 70%;
     position: relative;
 
 }
@@ -44,15 +44,14 @@ header p{
     width: 80%;
     height: auto;
     z-index: 2;
-    border: solid 10px rgb(43, 42, 42);
+    border: solid 2px rgb(167, 165, 165);
     border-radius: 15px;
     position: relative;
     bottom:20px;
 }
 
-.foto-rotada {
-    
-    border: solid 10px rgb(63, 62, 62);
+.foto-rotada {    
+    border: solid 2px rgb(167, 165, 165);
     border-radius: 15px;
     width: 80%;
     height: auto;
@@ -60,8 +59,6 @@ header p{
     transform: rotate(10deg);
     z-index: 1;
     right: 13px;
-    bottom: 25%;
-    
-    
+    bottom: 35%;    
 }
 

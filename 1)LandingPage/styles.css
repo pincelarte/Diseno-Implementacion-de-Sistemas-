@@ -5,6 +5,7 @@
 @import "./css/button.css";
 @import "./css/main.css";
 @import "./css/article.css";
+@import "./css/footer.css";
 
 
 *{
@@ -16,10 +17,18 @@
 
 @media (min-width: 830px) {
     .container{
-        width: 80%;
+        width: 70%;
         margin: 0 auto;
-
     }
+    header .parrafo{
+        width: auto;
+    }
+    header .fotos-portada{
+        margin-top: 8rem;
+        width: 70%;
+        height: auto;
+    }
+
     main{
         display: flex;
         flex-direction: row;
@@ -43,13 +52,20 @@
     }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1065px){
     header {        
         display: flex;
         flex-direction: row;        
         justify-content: space-around;
         align-items: center;
     }
+    header .fotos-portada{
+        margin-top: 5rem;
+        width: 70%  ;
+        
+    }
+   
+  
 }
 
 @media (max-width:1040px){
@@ -65,5 +81,10 @@
         width: 100%;
         margin-top: 1rem;
     }
+      /* header .fotos-portada{
+        
+        width: 70%;
+    } */
+
 
 }

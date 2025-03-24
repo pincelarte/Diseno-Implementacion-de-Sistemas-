@@ -5,7 +5,7 @@
     align-self: flex-start;
     padding: 1rem 2rem;
     background-color: rgb(85, 107, 74);
-    border: solid 1px black;
+    border: solid 1px rgb(167, 165, 165);
     color: rgb(238, 238, 238);
     cursor: pointer;
     border-radius: 5px;
@@ -17,7 +17,7 @@
     font-size: 1.5rem;
     padding: 1rem 2rem;
     background-color: rgb(85, 107, 74);
-    border: solid 1px black;
+    border: solid 1px rgb(167, 165, 165);
     color: rgb(238, 238, 238);
     cursor: pointer;
     border-radius: 5px;

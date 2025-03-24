@@ -31,8 +31,7 @@ main{
 }
 .tag img{
     display: flex;
-    
-    border: solid 1px rgb(63, 62, 62);
+    border: solid 1px rgb(167, 165, 165);
     width: 30%;
     height: auto;
     z-index: 2;
@@ -44,7 +43,7 @@ main{
 }
 
 .tag .rotada{
-    border: solid 1px rgb(63, 62, 62);
+    border: solid 1px rgb(167, 165, 165);
     border-radius: 10px;
     width: 30%;
     height: auto;    
@@ -60,6 +59,7 @@ main p{
     font-size: 1rem;
     margin-top: 5rem;
     text-align:justify;
+    color: rgb(102, 102, 102);
     
 
 }
