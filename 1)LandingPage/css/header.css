@@ -3,20 +3,19 @@ header {
     display: flex; 
     flex-direction: column; 
     align-items: center;
-    gap: 2rem;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
+    margin-top: 0.5rem;
 }
 
 .parrafo {
     width: 100%;
-    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;  
     font-size: 1rem;
     text-align: justify;
-    padding: 0 1rem;  
+      
     word-wrap: break-word;  
     box-sizing: border-box;  
 }
@@ -25,41 +24,35 @@ span {
     font-weight: bold;
     font-size: 1.5rem;
 }
-
-.container button {    
-    align-self: flex-start;
-    padding: 0.7rem 2rem;
-    background-color: rgb(85, 107, 74);
-    border: solid 1px black;
-    color: rgb(238, 238, 238);
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: rgb(51, 73, 47);
+header p{
+    font-size: 1rem;
+    margin-top: 5rem;
+    text-align: justify;
 }
 
 .fotos-portada {   
     display: flex;
-    margin-top: 10%;
+    margin-top: 20%;
     justify-content: center;
+    min-width: 400px;
     align-items: center;
     width: 80%;
     position: relative;
+
 }
 
-.foto-portada {
-    
+.foto-portada {    
     width: 80%;
     height: auto;
     z-index: 2;
     border: solid 10px rgb(43, 42, 42);
     border-radius: 15px;
+    position: relative;
+    bottom:20px;
 }
 
 .foto-rotada {
-    margin-top: 70px;
+    
     border: solid 10px rgb(63, 62, 62);
     border-radius: 15px;
     width: 80%;
@@ -67,7 +60,9 @@ button:hover {
     position: absolute;
     transform: rotate(10deg);
     z-index: 1;
-    bottom: 20%;
-    left: 18%;
+    right: 13px;
+    bottom: 25%;
+    
+    
 }
 
