@@ -4,6 +4,7 @@
 @import "./css/header.css";
 @import "./css/button.css";
 @import "./css/main.css";
+@import "./css/article.css";
 
 
 *{
@@ -49,4 +50,17 @@
         justify-content: space-around;
         align-items: center;
     }
+}
+
+@media (min-width:1024px){
+    .ventas{
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ventas span{
+        text-align: center;
+        align-items: center;
+    }
+
 }

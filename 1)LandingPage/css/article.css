@@ -1,0 +1,32 @@
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ventas{
+    
+    width: 80%;
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.ventas span{
+    display: flex;
+    padding-left: 3rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: rgb(102, 102, 102);
+    align-items: baseline;
+}
+
+
+
+
+
