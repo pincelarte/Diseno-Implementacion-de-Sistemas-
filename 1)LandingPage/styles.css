@@ -52,15 +52,18 @@
     }
 }
 
-@media (min-width:1024px){
+@media (max-width:1040px){
     .ventas{
         text-align: center;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .ventas span{
-        text-align: center;
-        align-items: center;
+        margin-left: 0;
+        display: block;       
+        width: 100%;
+        margin-top: 1rem;
     }
 
 }

@@ -19,8 +19,8 @@ article{
 
 .ventas span{
     display: flex;
-    padding-left: 3rem;
-    margin-left: 2rem;
+    
+    margin-left: 3rem;
     font-size: 1.5rem;
     color: rgb(102, 102, 102);
     align-items: baseline;
