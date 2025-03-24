@@ -31,7 +31,7 @@ header p{
 
 .fotos-portada {   
     display: flex;
-    margin-top: 8rem;
+    margin-top: 10rem;
     justify-content: center;
     min-width: 400px;
     align-items: center;

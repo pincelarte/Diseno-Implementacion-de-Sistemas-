@@ -2,13 +2,14 @@
 .parrafo button {    
     margin-top: 3rem;
     font-size: 1.5rem;
-    align-self: flex-start;
+    align-self: center;
     padding: 1rem 2rem;
     background-color: rgb(85, 107, 74);
     border: solid 1px rgb(167, 165, 165);
     color: rgb(238, 238, 238);
     cursor: pointer;
     border-radius: 5px;
+
 }
 
 .ventas button{
