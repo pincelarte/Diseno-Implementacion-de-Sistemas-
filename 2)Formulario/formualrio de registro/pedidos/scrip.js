@@ -1,14 +1,15 @@
-// Obtiene la parte de la URL que contiene los parámetros (todo lo que está después del "?")
-const paramsString = window.location.search; 
 
-// Crea un objeto URLSearchParams para trabajar con los parámetros
-const searchParams = new URLSearchParams(paramsString); 
 
-// Selecciona los divs donde deseas mostrar los valores
+// Obtiene la parte de la URL que contiene los parámetros
+const paramsString = window.location.search;
+const searchParams = new URLSearchParams(paramsString);
+
+// Selecciona los divs
 const datosDiv = document.getElementById("datos");
 const pedidoDiv = document.getElementById("pedido");
 const pagosDiv = document.getElementById("pagos");
 
+// Nombres legibles
 const nameMapping = {
     'inputNombre': 'Nombre',
     'inputTelefono': 'Teléfono',
@@ -21,22 +22,31 @@ const nameMapping = {
     'cantidadPollo': 'Pollo',
     'cantidadJyQ': 'J y Q',
     'combo': 'Combo',
-    'pago': 'Método de Pago'
+    'pago': 'Método de Pago',
+    'retiro': 'Forma de Entrega'
 };
 
-// Limpiar el contenido de los divs antes de añadir nuevos valores
+// Limpiar contenido
 datosDiv.innerHTML = '';
 pedidoDiv.innerHTML = '';
 pagosDiv.innerHTML = '';
 
+// Recorremos los parámetros
 searchParams.forEach((value, key) => {
-  let displayName = nameMapping[key] || key;
+    let displayName = nameMapping[key] || key;
 
-  if (key.includes("input")) {
-    datosDiv.innerHTML += `<p><strong>${displayName}:</strong> ${value}</p>`;
-  } else if (key.includes("cantidad")|| key.includes("combo")) {
-    pedidoDiv.innerHTML += `<p><strong>${displayName}:</strong> ${value}</p>`;
-  } else if (key.includes("pago") || key === "retiro") {
-    pagosDiv.innerHTML += `<p><strong>${displayName}:</strong> ${value}</p>`;
-  }
+    // Formatear fecha si es necesario
+    if (key === 'inputFechaHora') {
+        const fechaObj = new Date(value);
+        value = fechaObj.toLocaleString();
+    }
+
+    // Asignar al div correspondiente
+    if (key.includes("input")) {
+        datosDiv.innerHTML += `<p><strong>${displayName}:</strong> ${value}</p>`;
+    } else if (key.includes("cantidad") || key === "combo") {
+        pedidoDiv.innerHTML += `<p><strong>${displayName}:</strong> ${value}</p>`;
+    } else if (key.includes("pago") || key === "retiro") {
+        pagosDiv.innerHTML += `<p><strong>${displayName}:</strong> ${value}</p>`;
+    }
 });
