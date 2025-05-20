@@ -125,27 +125,27 @@ nav {
   @media (max-width: 700px) {
     .proyectos {
       flex-direction: column;
-      align-items: center; /* opcional para centrar */
+      align-items: center; 
     }
   
     .proyecto {
       flex-direction: column;
-      gap: 10px; /* separación entre imagen y texto */
-      width: 100%; /* para que ocupe todo el ancho */
-      margin-bottom: 30px; /* separación entre proyectos */
+      gap: 10px; 
+      width: 100%; 
+      margin-bottom: 30px;
     }
   
     .proyecto img {
-      width: 100%; /* o un tamaño adecuado para móvil */
-      max-width: 300px; /* para que no sea muy grande */
+      width: 100%; 
+      max-width: 300px;
       height: auto;
     }
   
     .proyecto .texto {
-      text-align: center; /* mejora la lectura en móvil */
+      text-align: center;
     }
 
-  /* Navbar en columna */
+  
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -157,7 +157,7 @@ nav {
     margin-bottom: 10px;
   }
 
-  /* Sección about: imagen arriba, texto abajo */
+  
   #about {
     flex-direction: column;
     align-items: center;
@@ -167,7 +167,7 @@ nav {
   }
 
   #about img.logo {
-    width: 120px; /* reducir un poco tamaño */
+    width: 120px; 
   }
 
   #about .texto {
