@@ -5,7 +5,7 @@ Repositorio para almacenar los proyectos de la materia Diseño e Implementación
 
 Carpeta1: Landing Page= JARDINERÍA {HTML5 CSS3 FLEX}
 
-Carpeta2: Formulario= {react}
+Carpeta2: Formulario= {HTML5 CSS3 flex}
 
 
 
